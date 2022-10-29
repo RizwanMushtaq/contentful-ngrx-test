@@ -1,1 +1,9 @@
-<test-nx-welcome></test-nx-welcome>
+<h1>NGRX</h1>
+
+<!--<div *ngFor="let article of articles">-->
+<!--  <h2>{{ article.fields.title }}</h2>-->
+<!--  <h2>{{ article.sys.id }}</h2>-->
+<!--  <img src="https:{{ article.fields.articleImage.fields.file.url }}" />-->
+<!--</div>-->
+
+<test-article-list [articles]="articles$ | async"></test-article-list>
